@@ -1,0 +1,281 @@
+body{
+  background-color: rgb(225, 236, 241);
+  margin: 0;
+  padding: 0px;
+  color: rgb(11, 11, 11);
+}
+
+/* Navbar Styling */
+nav {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  padding: 0 40px;
+ 
+}
+
+nav img {
+  margin-right: 50px;
+}
+
+.nav-left ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-left ul li {
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgb(24, 22, 23);
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+
+/* Contact me styling */
+form {
+  width: 350px;
+  margin: 50px auto;
+}
+
+form div {
+  margin-top: 10px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.mainBoard{
+  display: grid;
+  gap: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 0px solid;
+  border-radius: 15px;
+  margin: 70px 150px 70px 150px;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 8px 1px #d4d3d3;
+}
+
+.mainBoard > div {
+  background-color: rgb(231, 229, 229);
+  margin: auto;
+  padding: 7px;
+  font-size: 27px;
+}
+
+.mainBoard .items1{
+  grid-column: 1;
+  grid-row: 1/3;
+  border: 0px solid;
+  border-radius: 15px;
+  padding-left: 10px;
+  text-align: justify;
+  
+}
+
+.mainBoard .items2{
+  margin-top: 5px;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.button1 {
+  width: 100px;
+  background-color: rgb(109, 156, 206);
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f188c9;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+
+}
+
+.items3{
+  display: flex;
+  justify-content: center;
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.MyMedSos {
+  display: flex;
+}
+
+.btn {
+  margin: 5px;
+  border: none;
+  border-radius: 65%;
+  width: 65px;
+  color: rgb(155, 137, 150);
+  padding: 12px 12px auto;
+  align-content: center;
+  font-size: 40px; 
+}
+
+.btn:hover {
+  color: rgb(3, 0, 189);
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.items4{
+  grid-column: 2;
+  grid-row: 1/4;
+  margin-top: 30px;
+  border: 0px solid;
+  border-radius: 15px;
+  align-content: center;
+  text-align: center;
+}
+
+input, 
+select, 
+textarea {
+  width: 100%;
+  box-shadow: 2px 4px 8px 1px#636262;
+  background-color: #fbf7f7;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  margin-top: 5px;
+  
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+input {
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+/*style-blog-html*/
+
+#blog-area{
+  display: flex;
+  justify-content: center;
+  
+  flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid black;
+}
+.blog-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.blog-image{
+  width: 45%;
+  height: 45%;
+}
+
+
+.a{
+text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.blog-content .detail-blog-content{
+  display: grid;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0,0,0,0.05)
+}
+
+
+.blog-content{
+  padding: 30px;
+  display: grid;
+}
+
+.blog-text span{
+  color: #161515;
+  font-size: 0.9rem;
+}
+
+.blog-text .blog-title{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+}
+.blog-text .blog-title :hover{
+  color: rgb(108, 145, 204);
+  transition: all ease 0.3s;
+}
+
+
+.project-form .form-container .start-end {
+  display: flex;
+  gap: 8px;
+} 
+
+.project-form .form-container .checkbox-group {
+  display: flex;
+  
+}
+.project-form .form-container .checkbox-group .cb {
+  flex: 1;
+  display: flexbox;
+}
+
+.project-form .form-container .checkbox-group .cb div input {
+  width: fit-content;
+}
+
+.project-form .form-container .checkbox-group .cb div label {
+  color: #514a4a;
+  margin-left: 5px;
+}
+.button-group{
+  margin: 15px;
+  cursor: pointer;}
+  
+  .blog-form .form-container form .checkbox .checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+  }
+ 
+ 
+  

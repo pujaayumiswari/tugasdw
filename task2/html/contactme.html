@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contact Me </title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <img src="image\logo.png" alt="" style="width: 20%;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">MyProject</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="contactme.html">Contact Me</a>
+            </div>
+        </nav>
+
+        
+            <center><h1>GET IN TOUCH</h1></center>
+    
+
+       <!-- form contact me -->
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" class="input">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" class="input">
+            </div>
+
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" class="input">
+            </div>
+
+            <div>
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject" class="select">
+                    <option>contact</option>
+                    <option>hire me</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Your Message</label>
+                <textarea id="message" class="input"></textarea>
+            </div>
+
+            <div class="submitButton" style="cursor: pointer; color:rgb(141, 173, 253);">
+                <button type="button" onclick="submitData()" style="cursor: pointer; color: rgb(250, 250, 250); font-size: 20px; background-color: rgb(130, 163, 246); border: none; border-radius: 5px; padding: 5px;align-content: center;">submit</button>
+            </div>
+        </form>
+        <script src="js/contact.js"></script>
+         
+    </body>
+    
+</html>
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>puja</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/5140afd7e2.js" crossorigin=""></script>
+</head>
+
+<body>
+     <nav>
+            <div class="nav-left">
+                <ul>
+                    <img src="image/logo.png" alt="">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">My Project</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contactme.html">Contact Me</a>
+            </div>
+            
+        </nav>
+        <div class="blog">
+          <div class="blog-form">
+            <div class="form-container">
+              <form onsubmit="addBlog(event)">
+                <h1>My Project</h1>
+                <div>
+                  <label for="input-blog-title">Project Name</label>
+                  <input type="text" id="input-blog-title" />
+                </div>
+                <div class="date-container" style="display: flex; margin-left: 10px;">
+                  <div class="start-date" style="margin-right: 7px;">
+                    <label for="input-start-date" class="title">Start Date</label>
+                    <input type="date" id="input-start-date" />
+                  </div>
+                  <div class="end-date">
+                    <label for="input-end-date" class="title">End Date</label>
+                    <input type="date" id="input-end-date" />
+                  </div>
+                </div>
+            
+                <label for="input-blog-content">Content</label>
+                <textarea id="input-blog-content"></textarea>
+                <div class="checkbox">
+                  <div>
+                    <label>Technologies</label>
+                    <div class="checkbox-container" id="checkbox">
+                      <div class="checkbox-left">
+                        <div>
+                          <input type="checkbox" id="input-nodejs" />
+                          <label for="input-nodeJS">Node JS</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="input-reactJS" />
+                          <label for="input-reactJS">React JS</label>
+                        </div>
+                      </div>
+                      <div class="checkbox-right">
+                        <div>
+                          <input type="checkbox" id="input-nextJS" />
+                          <label for="input-nextJS">Next JS</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="input-typeScript" />
+                          <label for="input-typeScript">TypeScript</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="input-blog-image-group">
+                    <label>Upload Image</label>
+                    <input type="file" id="input-blog-image"/>
+    
+                    <label for="input-blog-image">
+                      
+                    </div>
+                    <div class="button-group">
+                      <button style="float: right;cursor: pointer; background-color: rgb(100, 146, 186);">submit</button>
+                    </div> 
+                    </label>
+                  </div>
+            </div>
+          
+          </form>
+        </div>
+      </div>
+
+      <hr class="line" />
+
+      <div id="contents" class="blog-list">
+        <div class="blog-list-item">
+
+          <div class="blog-image">
+            <img src="image/AI.jpg" alt="blog_img" />
+
+          </div>
+          <div class="blog-content">
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-delete">Delete Post</button>
+            </div>
+            <h1>
+              <a href="blog-detail.html" target="_blank"
+                >apakah AI bisa menggantikan programmer?</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+              21 may 2023 | puja ayu miswari
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/blog.js"></script>
+  </body>
+</html>
+  
+        
+
+      
