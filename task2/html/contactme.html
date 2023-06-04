@@ -5,20 +5,31 @@
         <link href="style.css" rel="stylesheet">
     </head>
 
-    <body>
-        <nav>
-            <div class="nav-left">
-                <ul>
-                    <img src="image\logo.png" alt="" style="width: 20%;">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">MyProject</a></li>
-                </ul>
-            </div>
-
-            <div class="nav-right">
-                <a href="contactme.html">Contact Me</a>
-            </div>
-        </nav>
+    
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <img src="image\logo.png" alt="">
+                <li class="item-collapse"><a href="index.html">Home</a></li>
+                <li class="item-collapse"><a href="blog.html">My Project</a></li>
+                <li class="item-collapse"><a href="testimonials.html">Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="nav-right-item-collapse">
+            <a href="contactme.html">Contact Me</a>
+        </div>
+        <div class="nav-right" id="barsmenu">
+            <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+            <i class="fa 2x fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html" class="hamberger-active">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonials.html">Testimonial</a>
+        <a href="contactme.html" class="hamburger" style="background-color: black;">Contact Me</a>
+    </div>
+    
 
         
             <center><h1>GET IN TOUCH</h1></center>
@@ -59,6 +70,7 @@
             </div>
         </form>
         <script src="js/contact.js"></script>
+        <script src="js/index.js"></script>
          
     </body>
     

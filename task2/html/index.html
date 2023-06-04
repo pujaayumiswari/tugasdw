@@ -13,31 +13,30 @@
                     <img src="image\logo.png" alt="">
                     <li class="item-collapse"><a href="index.html">Home</a></li>
                     <li class="item-collapse"><a href="blog.html">My Project</a></li>
+                    <li class="item-collapse"><a href="testimonials.html">Testimonial</a></li>
                 </ul>
             </div>
-            <div class="nav-right item-collapse">
+            <div class="nav-right-item-collapse">
                 <a href="contactme.html">Contact Me</a>
             </div>
             <div class="nav-right" id="barsmenu">
-                <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamberger()">
+                <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
                 <i class="fa 2x fa-solid fa-bars"></i></button>
             </div>
         </nav>
         <div class="hamburger-nav-container" id="hamburger-nav-container">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="hamberger-active">Home</a>
             <a href="blog.html">Blog</a>
-            <a href="contact.html">contact</a>
+            <a href="testimonials.html">Testimonial</a>
+            <a href="contactme.html" class="hamburger" style="background-color: black;">Contact Me</a>
         </div>
         <div class="container">
-            <section>
-                <div style="width: 350px; margin: 0 auto; padding: 10px; border-radius: 10px; box-shadow: 0 0 15px #cecece;"></div>
-            </section>
-        </div>
-    <div class="mainBoard">
-        <div class="items1">
-            <h1 style="font-size: 33px; color: black"> Welcome to my Hut</h2>
-                
-            <p style="font-family: 'Alkatra', cursive;
+            <section>           
+            <div class="mainBoard">
+                <div class="items1">
+                    <h1 style="font-size: 20px; color: black"> Welcome to my Hut</h2>
+                        
+                        <p style="font-family: 'Alkatra', cursive;
             font-family: 'Crimson Text', serif; color: black;">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
@@ -56,18 +55,21 @@
                 </button>
             </a>
             
-            </a>
-            <a href="https://instagram.com/pujaayumiswari">
-                <button class="btn">
-                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>  
-                </button>  
-            </a>
-        </div>
-        <div class="items4" id="MyProfile">
-            <img src="image\ft.jpeg" alt="" style="width: 90%; border-radius: 10px;">
-            <b style="font-family: Arial, Helvetica, sans-serif; text-align: center; color: black;">puja ayu miswari</b>
-            <p style="color:black; margin: 16px auto; text-align: center;">Fullstack Developer</p>
-        </div>
-    </div>   
+        </a>
+        <a href="https://instagram.com/pujaayumiswari">
+            <button class="btn">
+                <span class="icon"><i class="fa-brands fa-instagram"></i></span>  
+            </button>  
+        </a>
+    </div>
+    <div class="items4" id="MyProfile">
+        <img src="image\ft.jpeg" alt="" style="width: 80%; border-radius: 5px;">
+        <b style="font-family: Arial, Helvetica, sans-serif; text-align: center; color: black;"></b>
+        <h3>Puja Ayu Miswari</h3>
+        <p style="color:black; margin: 16px auto; text-align: center;">Fullstack Developer</p>
+    </div>
+</div>   
+</section>
+    <script src="js/index.js"></script>
 </body>
 </html>

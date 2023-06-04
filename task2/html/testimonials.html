@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testimoni</title>
+  <link href="testi.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5140afd7e2.js" crossorigin=""></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+        <ul>
+            <img src="image\logo.png" alt="">
+            <li class="item-collapse"><a href="index.html">Home</a></li>
+            <li class="item-collapse"><a href="blog.html">My Project</a></li>
+            <li class="item-collapse"><a href="testimonials.html">Testimonial</a></li>
+        </ul>
+    </div>
+    <div class="nav-right-item-collapse">
+        <a href="contactme.html">Contact Me</a>
+    </div>
+    <div class="nav-right" id="barsmenu">
+        <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+        <i class="fa 2x fa-solid fa-bars"></i></button>
+    </div>
+</nav>
+<div class="hamburger-nav-container" id="hamburger-nav-container">
+    <a href="index.html" class="hamberger-active">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="testimonials.html">Testimonial</a>
+    <a href="contactme.html" class="hamburger" style="background-color: black;">Contact Me</a>
+</div>
+<div class="container">
+  <h1>My Testimonials</h1>
+  <div class="container-rating">
+    <h2>Rating By Stars</h2>
+    <div class="rating">
+      <button class="rating-btn" onclick="getAllTestimonials()">All</button>
+      <button class="rating-btn" onclick="getFilteredTestimonials(1)">
+        1 <i class="fa-solid fa-star"></i>
+      </button>
+      <button class="rating-btn" onclick="getFilteredTestimonials(2)">
+        2 <i class="fa-solid fa-star"></i>
+      </button>
+      <button class="rating-btn" onclick="getFilteredTestimonials(3)">
+        3 <i class="fa-solid fa-star"></i>
+      </button>
+      <button class="rating-btn" onclick="getFilteredTestimonials(4)">
+        4 <i class="fa-solid fa-star"></i>
+      </button>
+      <button class="rating-btn" onclick="getFilteredTestimonials(5)">
+        5 <i class="fa-solid fa-star"></i>
+      </button>
+</div>
+<section class="testimonials" id="testimonials">
+<!--<div class="testimonial">
+  <img
+      src="https://milenianews.com/wp-content/uploads/2020/11/baesuzy.jpg"
+      class="profile-testimonial"
+  />
+  <p class="quote">"the best, "</p>
+  <p class="author">Mba Suzy</p></div>
+  <div class="testimonial">
+    <img
+        src="https://cdn.inkistyle.com/wp-content/uploads/2020/12/Start-Up-Kdrama-Fashion-Nam-Joo-Hyuk-Episode-16-1-2.jpg"
+        class="profile-testimonial"
+    />
+    <p class="quote">"Bagus, tapi pembuatan agak lama"</p>
+    <p class="author">Mas nam jo hyuk</p></div>
+    <div class="testimonial">
+    
+                  <img
+                      src="https://th.bing.com/th/id/OIP.RvPJ-lyeFL_LuTt_ujiq4QHaDv?pid=ImgDet&rs=1"
+                      class="profile-testimonial"
+                  />
+                  <p class="quote">"B aja, "</p>
+                  <p class="author">Mas Ganteng</p></div>-->
+              
+  </section>
+<script src="js/ajax.js"></script>
+<script src="js/index.js"></script>
+<script src="js/testimonials.js"></script>
+</body>
+</html>

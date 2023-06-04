@@ -3,6 +3,7 @@ body{
   margin: 0;
   padding: 0px;
   color: rgb(11, 11, 11);
+
 }
 
 /* Navbar Styling */
@@ -35,7 +36,7 @@ nav img {
   color: black;
 }
 
-.nav-right a {
+.nav-right-item-collapse a {
   text-decoration: none;
   font-size: 20px;
   background-color: rgb(24, 22, 23);
@@ -43,7 +44,13 @@ nav img {
   border-radius: 5px;
   color: white;
 }
-
+.mainBoard{
+  display: grid;
+  padding-top: 5px;
+   border: 0px solid;
+   margin: 5px;
+  
+ }
 
 /* Contact me styling */
 form {
@@ -61,7 +68,7 @@ label {
 }
 
 .mainBoard{
-  display: grid;
+ display: grid;
   gap: 8px;
   background-color: rgb(255, 255, 255);
   border: 0px solid;
@@ -192,9 +199,8 @@ input {
 #blog-area{
   display: flex;
   justify-content: center;
-  
   flex-direction: column;
-  padding: 40px;
+  padding: 20px;
   border-bottom: 1px solid black;
 }
 .blog-heading{
@@ -205,28 +211,24 @@ input {
 
 }
 
-.blog-image{
-  width: 45%;
-  height: 45%;
-}
-
-
 .a{
 text-decoration: none;
 }
 ul{
   list-style: none;
 }
-.blog-content .detail-blog-content{
-  display: grid;
-  flex-direction: column;
-  border-bottom: 1px solid rgba(0,0,0,0.05)
+.content{
+  display: flex;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  width: 400px;
+margin-left: 0px;
+margin-right: 0px;
+
 }
 
 
 .blog-content{
-  padding: 30px;
-  display: grid;
+  padding: 10px;
 }
 
 .blog-text span{
@@ -236,7 +238,7 @@ ul{
 
 .blog-text .blog-title{
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 400;
   color: black;
 }
 .blog-text .blog-title :hover{
@@ -277,5 +279,153 @@ ul{
     margin-top: -10px;
   }
  
- 
+  /*responsive style*/
   
+  #barsmenu{
+    display: none;
+  }
+
+  .hamburger-nav-container{
+    font-size: 23px;
+    list-style-type: none;
+    color: black;
+   display: none;
+
+  }
+  .hamburger-nav-container a{
+    text-decoration: none;
+    color: white;
+    background-color: #b2afaf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid white;
+  }
+  
+  .hamburger-nav-container .hamberger-active{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid white;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .container {
+      width: 100%;
+    }
+  }
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media only screen and (max-width: 550px) {
+    .item-collapse {
+      display: none;
+    }
+    .nav-right-item-collapse {
+      display: none;
+    }
+
+    #barsmenu {
+      display: block;
+    } 
+    .mainBoard{
+      display: block;
+      padding-top: 5px;
+       background-color: rgb(255, 255, 255);
+       border: 0px solid;
+       border-radius: 15px;
+       margin: 5px;     
+     }
+   /*display contactme*/
+   input, 
+select, 
+textarea {
+  width: 80%;
+  box-shadow: 2px 4px 8px 1px#636262;
+  background-color: #fbf7f7;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  margin: 10px;
+  }
+    
+/*style testimonial*/
+.container-testi {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .testimonial {
+    width: 25%;
+    margin: 0 15px 30px 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial .profile-testimonial {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .quote {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .author {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .container-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rating-btn {
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .testimonial {
+      width: 40%;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .testimonial {
+      width: 80%;
+    }
+  }
+  
+     
+
+      
+      
