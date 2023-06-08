@@ -45,12 +45,17 @@ nav img {
   color: white;
 }
 .mainBoard{
-  display: grid;
-  padding-top: 5px;
-   border: 0px solid;
-   margin: 5px;
+    display: grid;
+     gap: 8px;
+     background-color: rgb(255, 255, 255);
+     border: 0px solid;
+     border-radius: 15px;
+     margin: 70px 150px 70px 150px;
+     
+   
+   }
   
- }
+ 
 
 /* Contact me styling */
 form {
@@ -67,19 +72,7 @@ label {
   font-size: 20px;
 }
 
-.mainBoard{
- display: grid;
-  gap: 8px;
-  background-color: rgb(255, 255, 255);
-  border: 0px solid;
-  border-radius: 15px;
-  margin: 70px 150px 70px 150px;
-  box-sizing: border-box;
-  box-shadow: 2px 4px 8px 1px #d4d3d3;
-}
-
 .mainBoard > div {
-  background-color: rgb(231, 229, 229);
   margin: auto;
   padding: 7px;
   font-size: 27px;
@@ -197,7 +190,7 @@ input {
 /*style-blog-html*/
 
 #blog-area{
-  display: flex;
+  display: grid;
   justify-content: center;
   flex-direction: column;
   padding: 20px;
@@ -222,10 +215,7 @@ ul{
   border-bottom: 1px solid rgba(0,0,0,0.05);
   width: 400px;
 margin-left: 0px;
-margin-right: 0px;
-
-}
-
+margin-right: 0px;}
 
 .blog-content{
   padding: 10px;
@@ -246,23 +236,16 @@ margin-right: 0px;
   transition: all ease 0.3s;
 }
 
-
-.project-form .form-container .start-end {
+.date-container {
   display: flex;
-  gap: 8px;
-} 
-
-.project-form .form-container .checkbox-group {
-  display: flex;
-  
-}
-.project-form .form-container .checkbox-group .cb {
-  flex: 1;
-  display: flexbox;
+   margin-left: 10px;
+   height: 100%;
+   
 }
 
 .project-form .form-container .checkbox-group .cb div input {
   width: fit-content;
+ 
 }
 
 .project-form .form-container .checkbox-group .cb div label {
